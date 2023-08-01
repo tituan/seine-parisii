@@ -1,0 +1,26 @@
+.burger {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: $color-white;
+    &.burger-active {
+       .burger__bar:nth-child(2) {
+        display: none;
+       } 
+    }
+    &__bar {
+        display: block;
+        width: 27px;
+        height: 2px;
+        background-color: $color-blue;
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
